@@ -25,12 +25,7 @@
 
 
 <div class="container border p-5 form-layout">
-    <p style="text-align: bottom; margin-bottom: 1vh; display: flex; align-items: end; font-weight: bold; font-size: 5vh;">
-        <img src="/static/Jentle_Logo.jpeg" alt="student_pics" width="18%" height="180" style="border-radius: 50%; vertical-align: bottom;">
-        <span style="position: relative; top: 100%;">{{ record.last_name|upper }}</span>, {{ record.first_name }}
-    </p>
-
-<!--    <p style="text-align: bottom; margin-bottom: 0;">  <img src="/static/Cat.jpg" alt="" width="18%" height="180" style="border-radius: 50%; ;">&nbsp;<span style="padding-bottom: -20vh;">{{ record.last_name|upper }}</span>, {{ record.first_name }}</p>-->
+    <p> <i class="fa fa-user-circle" aria-hidden="true" style="color: #40A2D8;"></i> <span style="">{{ record.last_name|upper }}</span>, {{ record.first_name }}</p>
     <table class="table table-bordered border-primary record__detail">
         <tbody>
             <tr>
@@ -73,7 +68,6 @@
                 <th>Date Joined</th>
                 <td>{{ record.creation_date|date:"F d, Y" }}</td>
             </tr>
-
         </tbody>
     </table>
 
